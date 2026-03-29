@@ -1,0 +1,63 @@
+{
+  "dataset_kind": "demo",
+  "metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0,
+    "cohen_kappa": null,
+    "support_by_class": {
+      "pill": 5
+    }
+  },
+  "label_order": {
+    "display": [
+      "pill"
+    ],
+    "normalized": [
+      "pill"
+    ]
+  },
+  "warnings": [
+    "Cohen's kappa skipped (need at least 2 classes present in true/pred)."
+  ],
+  "plots": {
+    "confusion_matrix.png": "generated",
+    "confidence_histogram.png": "generated",
+    "per_class_f1_bar.png": "generated",
+    "latency_boxplot.png": "generated"
+  },
+  "statistical_tests": {
+    "timing_f_test_variance": {
+      "groups": [
+        "Algorithm_A",
+        "Algorithm_B"
+      ],
+      "skipped": false,
+      "F": 1.2098765432098761,
+      "df1": 2,
+      "df2": 1,
+      "p_value": 0.9184848173730027,
+      "interpretation": "No strong evidence of variance difference (p >= 0.05)."
+    },
+    "timing_welch_t_test": {
+      "groups": [
+        "Algorithm_A",
+        "Algorithm_B"
+      ],
+      "skipped": false,
+      "t_statistic": -3.223984715960539,
+      "p_value": 0.06371751832276354,
+      "interpretation": "No strong evidence of mean difference (p >= 0.05)."
+    }
+  },
+  "gauge_rr": {
+    "overall_agreement": 1.0,
+    "repeatability": 1.0,
+    "reproducibility": 1.0,
+    "average_pairwise_kappa_between_raters": null
+  }
+}
